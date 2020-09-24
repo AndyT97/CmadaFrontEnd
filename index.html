@@ -8,23 +8,40 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <title>Bootstrap</title>
 </head>
-<body>
-<div class="p-3 mb-2 bg-dark text-white">
-  <img src="img/logo-white.png" >
 
-</div><!-- container -->
+
+<body class = "bg-secondary text-white" >
+
+  <header class="p-3 mb-2 bg-dark text-white">
+    <img src="img/logo-white.png" >
+    <div class="row p-3" >
+    <button class="btn btn-secondary p-2" type="button">View Patient Database</button>
+    <button class="btn btn-secondary p-2" type="button">View Caregiver Database</button>
+  </div>
+  </header>
+
+
+
+<style>
+#searchbar {
+  max-width: 800px;
+  width: 100%;
+}
+</style>
 
 <div class="p-3 mb-2 bg-dark text-white">
   <h4>Caregiver recommender</h4>
    <input id="searchbar" onkeyup="<>" type="text"
    name= "search" placeholder="Enter something..">
 
+   <button type="button">Submit</button>
 
 </div><!--other container-->
 
-<div class="footer">
-  <p>Footer stuff</p>
+<div id="results" class=" bg-white text-dark">
+  <p>Results...</p>
 </div>
+
 
 <!-- Ill change to CDN later -->
 <script src="js/jquery-3.5.1.min.js"></script>
