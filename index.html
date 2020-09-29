@@ -31,19 +31,15 @@
 
 <body class = "bg-secondary text-white" >
 
-  <header class="navbar p-3 mb-0 bg-dark text-white">
+  <header class="navbar p-3 bg-dark text-white">
     <img class ="p-3" src="img/logo-white-40.png" >
       <form class="p-3 form-inline mr-auto">
-        <!-- <input class="form-control" id="searchbar" onkeyup="<>" type="text"
+        <input class="form-control" id="searchbar" onkeyup="<>" type="text"
         name= "search" placeholder="Search..">
-        <button class ="btn btn-secondary btn-rounded btn-sm my-0 ml-sm-2" type="submit" >Search</button> -->
+        <button class ="btn btn-secondary btn-rounded btn-sm my-0 ml-sm-2" type="submit" >Search</button>
       </form>
-
-    <!-- <button class="btn btn-secondary p-2" type="button">View Patient Database</button>
-    <button class="btn btn-secondary p-2" type="button">View Caregiver Database</button> -->
     <!-- TODO this will be dynamic -->
-    <h4>Welcome User1 </h4>
-    <a class="nav-link active" href="#">Logout</a>
+    <h5>Welcome User1 </h5>
   </header>
 
   <div class="container-fluid p-3 mb-2 bg-dark text-white ">
@@ -58,28 +54,55 @@
         <a class="dropdown-item" href="#">other</a>
       </div>
     </div>
+    <a class=" float-right nav-link active" href="#">Logout</a>
   </div>
 
-<!-- <div class="dropdown container-fluid p-3 mb-2 bg-dark text-white">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-    View
-  </button>
-  <div class="dropdown-menu">
-    <a class="dropdown-item" href="#">Patient Database</a>
-    <a class="dropdown-item" href="#">Caregiver Database</a>
-  </div>
-</div> -->
-
-<div class="container bg-white text-dark" id="mainContent">
+<div class="container-fluid table-responsive bg-white text-dark" id="mainContent">
   <table class="table">
-    <tr>
-      <th>Name</th>
-      <th>Occupation</th>
-      <th>Availibility</th>
-      <th>Location</th>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Occupation</th>
+        <th>CareType</th>
+        <th>Age</th>
+        <th>Availability</th>
+        <th>Location</th>
+        <th>Rank</th>
+        <th>Rating</th>
+        <th>Find Similar</th>
+        <th>Do something</th>
     </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Abe Weyland</td>
+      <td>Administrative Officer</td>
+      <td>Child Care, Seniors, Cleaning</td>
+      <td>30</td>
+      <td>Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday</td>
+      <td>Centretown</td>
+      <td>1</td>
+      <td>8.1</td>
+      <td><a class="nav-link active" href="#">Find Similar</a>
+      <td><a class="nav-link active" href="#">Get recommendation</a>
+        <!-- TODO READTHIS: https://stackoverflow.com/questions/17147821/how-to-make-a-whole-row-in-a-table-clickable-as-a-link -->
+    </tr>
+    <tr>
+      <td>Abe Weyland</td>
+      <td>Administrative Officer</td>
+      <td>Child Care, Seniors, Cleaning</td>
+      <td>30</td>
+      <td>Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday</td>
+      <td>Centretown</td>
+      <td>1</td>
+      <td>8.1</td>
+      <td><a class="nav-link active" href="#">Find Similar</a>
+      <td><a class="nav-link active" href="#">Get recommendation</a>
+        <!-- TODO READTHIS: https://stackoverflow.com/questions/17147821/how-to-make-a-whole-row-in-a-table-clickable-as-a-link -->
+    </tr>
+  </tbody>
   </table>
-</div>
+</div> <!--END of table-->
 
 <!-- <div id="results" class=" bg-white text-dark">
   <p>Results...</p>
