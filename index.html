@@ -20,21 +20,18 @@
   </style>
 
 </head>
-
+<header class="navbar p-3 bg-dark text-white">
+  <img class ="p-3" src="img/logo-white-40.png" >
+    <form class="p-3 form-inline mr-auto">
+      <input class="form-control" id="searchbar" onkeyup="<>" type="text"
+      name= "search" placeholder="Search..">
+      <button class ="btn btn-secondary btn-rounded btn-sm my-0 ml-sm-2" type="submit" >Search</button>
+    </form>
+  <!-- TODO this will be dynamic -->
+  <h5>Welcome User1 </h5>
+</header>
 
 <body class = "bg-secondary text-white" >
-
-  <header class="navbar p-3 bg-dark text-white">
-    <img class ="p-3" src="img/logo-white-40.png" >
-      <form class="p-3 form-inline mr-auto">
-        <input class="form-control" id="searchbar" onkeyup="<>" type="text"
-        name= "search" placeholder="Search..">
-        <button class ="btn btn-secondary btn-rounded btn-sm my-0 ml-sm-2" type="submit" >Search</button>
-      </form>
-    <!-- TODO this will be dynamic -->
-    <h5>Welcome User1 </h5>
-  </header>
-
   <div class="container-fluid p-3 mb-2 bg-dark text-white ">
     <button type="button" class="btn btn-secondary">View Caregiver database</button>
     <button type="button" class="btn btn-secondary">View Patient database</button>
@@ -64,7 +61,7 @@
         <th>Rank</th>
         <th>Rating</th>
         <th>Find Similar</th>
-        <th>Do something</th>
+        <th>Find Recommendation</th>
     </tr>
   </thead>
   <tbody>
@@ -100,7 +97,7 @@
 
 
 <footer class="fixed-bottom page-footer bg-dark text-white small">
-  <div class="text-center py-3">Powered By Artificial Incoherence
+  <div class="text-center py-2">Powered By Artificial Incoherence</div>
   <div class="footer-copyright text-center py-3">© 2020 Copyright: Artificial Incoherence</div>
 </footer>
 
